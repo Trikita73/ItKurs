@@ -78,13 +78,14 @@
 }
 
  /* Large Devices, Wide Screens */
-@media (min-height: 720px) and (min-width : 1400px) {
+@media (min-height: 780px) and (min-width : 1400px) {
 	.tabs_header {
 		position: absolute;
 		bottom: 80px;
 	}
 	.tabs_header > div {
 		width: 100%;
+		max-width: 660px;
 	}
 	.top_header {
 		margin-top: 150px;

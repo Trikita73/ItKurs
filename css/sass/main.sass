@@ -8,7 +8,7 @@ $green-color: #67bc5c
 
 body
 	font-family: "RobotoRegular", sans-serif
-	color: $text-color;
+	color: $text-color
 	font-weight: normal
 	font-size: 16px
 	min-width: 320px
@@ -27,7 +27,7 @@ h1
 section 
 	padding: 58px 0 68px
 	&.s_dark h2, h3, p
-	    color:fff
+		color: #fff
 
 section h2
 	color: $blue-color
@@ -35,13 +35,11 @@ section h2
 	line-height: 56px
 	margin-bottom: 50px
 
-
 h2
-	color: $blue-color
+	color: #fff
 	font-size: 50px
 	line-height: 56px
 	margin-bottom: 50px
-
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -58,8 +56,9 @@ header
 	background-image: url(../img/top_bg.jpg)
 	background-position: top center
 	background-size: cover
-	color: #fff;
+	color: #fff
 	padding-top: 32px
+	padding-bottom: 40px
 
 .logo
 	font-size: 40px
@@ -69,18 +68,31 @@ header
 .top_phone
 	text-align: right	
 
+.tab_item
+	display: none 
+
+.tab_item:first-child
+	display: block 	
+
 .top_phone .wrapper .tab
 	text-transform: uppercase
 	cursor: pointer 
-	
+	font-family: "RobotoBold", sans-serif
 
 .top_phone .wrapper .active 
-	 text-decoration: underline
+	text-decoration: underline
 
 .top_phone .tab_item 
 	display: none
-	font-size: 18px
+	font-size: 34px
 	font-family: "RobotoBold", sans-serif
+
+.top_header 
+	margin-top: 60px
+	h2
+		margin: 15px 0 0
+		font-family: "CleanvertisingLight", sans-serif
+		font-size: 36px
 
 .top_phone .tab_item:first-child 
 	display: block
@@ -90,31 +102,31 @@ header
 		&.active
 			background-color: #fff
 	.tab_content
+		padding: 12px 18px 16px
 		font-size: 18px
 		background-color: rgba(225,225,225,.6)
- 		padding: 12px 18px 16px		
 
 .tabs_header 
-	margin-top: 30px
+	margin-top: 50px
 	ul, li 
 		list-style-type: none
 		margin: 0
 		padding: 0
 	li
-		padding-left:40px
+		padding-left: 40px
 		position: relative
 		margin-bottom: 12px
 	i
 		position: absolute
 		left: 0
-		top: 0
+		top: -29px
 		line-height: 26px
 		color: #6F6A67
 	.tabs
-		span
+		.tab
 			display: inline-block
-			backgrpound-color: rgba(225,225,225,.25)
-			padding: 15px 18px 
+			background-color: rgba(225,225,225,.25)
+			padding: 15px 18px 	
 			text-transform: uppercase
 			cursor: pointer
 			float: left 
@@ -122,8 +134,74 @@ header
 			+transition(all .25s ease)
 			&.active
 				background-color: rgba(255,255,255,.6)
-				color: #fff
-	.tab_content
+				color: #000
+	.tab_content		
 		font-size: 18px
 		background-color: rgba(255,255,255,.6)
-		padding: 12px 18px 16px 			
+		padding: 12px 18px 16px		
+		text-transform: uppercase
+		font-family: "RobotoBold", sans-serif
+		color: #000			
+
+.button
+	border: none 
+	cursor: pointer 
+	display: inline-block 
+	height: 46px
+	line-height: 46px
+	padding: 0 32px
+	background-color: #000
+	text-transform: uppercase 
+	text-align: center 
+	color: #fff
+	border-radius: 3px
+	font-size: 16px
+	font-family: "RobotoBold", sans-serif
+	&.btn_red
+		background-color: $red-color
+	&.btn_green
+		background-color: $green-color
+	&.btn_white
+		background-color: #fff
+		color: #000
+.button_wrap
+	text-align: right 
+
+a.button
+	color: fff
+	text-decoration: none
+
+.s_tizers
+	+linear-gradient(#c6d8ee, #e8eff7)
+	color: $blue-color
+	font-family: "CleanvertisingLight", sans-serif
+	text-transform: uppercase
+	padding: 40px 0
+	span
+		font-size: 14px 
+		display: block
+	strong
+		font-weight: normal
+		font-size: 23px
+		display: block
+
+.tiz_img, .tiz_descr
+	display: inline-block 
+	vertical-align: bottom		
+		
+.tiz_img i
+	font-size: 70px
+	line-height: 48px
+	margin-right: 8px
+
+.s_tizers .row
+	> div:nth-child(1)
+		i
+			font-family: "RobotoRegular", sans-serif
+			letter-spacing: -12px
+			margin-right: 18px
+		strong
+			font-size: 25px
+			line-height: 20px
+		span
+			font-size: 20px	

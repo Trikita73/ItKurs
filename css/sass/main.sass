@@ -3,7 +3,7 @@
 $text-color: #333
 $dark-color: #000
 $red-color: #9B1818
-$blue-color: #9B1818
+$blue-color: #003469
 $green-color: #67bc5c
 
 body
@@ -34,6 +34,13 @@ section h2
 	font-size: 50px
 	line-height: 56px
 	margin-bottom: 50px
+	font-family: "CleanvertisingLight", sans-serif
+	text-align: center
+	margin-top: 0
+	font-weight: normal
+
+p.strong
+	font-family: "RobotoBold", sans-serif
 
 h2
 	color: #fff
@@ -176,7 +183,7 @@ a.button
 	color: $blue-color
 	font-family: "CleanvertisingLight", sans-serif
 	text-transform: uppercase
-	padding: 40px 0
+	padding: 5px 0 0
 	span
 		font-size: 14px 
 		display: block
@@ -184,24 +191,80 @@ a.button
 		font-weight: normal
 		font-size: 23px
 		display: block
-
-.tiz_img, .tiz_descr
-	display: inline-block 
-	vertical-align: bottom		
+.row
+	> div
+		margin-bottom: 35px
+.tiz_img, 
+.tiz_descr
+	display: block 
+	vertical-align: bottom	
+	text-align: center	
+	margin-top: 8px
 		
 .tiz_img i
 	font-size: 70px
-	line-height: 48px
-	margin-right: 8px
+	line-height: 2px
 
 .s_tizers .row
-	> div:nth-child(1)
-		i
-			font-family: "RobotoRegular", sans-serif
-			letter-spacing: -12px
-			margin-right: 18px
-		strong
-			font-size: 25px
-			line-height: 20px
-		span
-			font-size: 20px	
+	strong
+		font-size: 18px
+		line-height: 28px
+		font-family: "RobotoBold", sans-serif 
+		margin-bottom: 27px;
+	span
+		font-size: 20px	
+		line-height: 24px
+
+.profi_left
+	color: $red-color
+	i
+		font-size: 100px
+		line-height: 100px
+		margin-top: -103px
+
+.profi_right
+	p
+		color: #000
+		margin-top: 5px
+	h3
+		display: inline-block
+		color: #000
+		margin: 0
+		color: $red-color
+		font-size: 28px
+
+form
+	background-color: #F7F7F7
+	padding: 25px 30px
+	border: $green-color 5px solid
+	border-radius: 5px	
+	h2
+		text-transform: uppercase
+		margin-top: 0
+		font-family: "RobotoBold", sans-serif
+		font-size: 22px
+		color: $text-color
+		line-height: 22px
+		margin-bottom: 25px
+	label
+		display: block
+		margin-bottom: 10px
+		color: #666
+		font-size: 14px
+	input,
+	select
+		display: block
+		line-height: 40px
+		height: 40px
+		border: #D9D9D9 1px solid
+		box-shadow: 0 0  20px rgba(0,0,0,.06) inset
+		width: 100%
+		text-indent: 10px
+		font-size: 20px
+		&:focus
+			box-shadow: $green-color 0 0 0 2px
+			border-radius: 3px 
+			border-color: $green-color
+	.button_wrap
+		text-align: center
+		margin: 30px 0 10px

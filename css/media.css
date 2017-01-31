@@ -2,12 +2,16 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
-
+	.tiz_descr{
+		display: block;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+	.profi_item:last-child {
+		margin-bottom: 30px;
+	}
 }
 
 /* Small Devices, Tablets */
@@ -20,6 +24,15 @@
 	}
 	.top_phone .tab_item {
 		font-size: 30px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 600px) {
+	.profi_item {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 25px;
 	}
 }
 
@@ -41,6 +54,10 @@
 	}
 	.button_wrap {
 		text-align: center;
+	}
+	section h2 {
+		font-size: 38px;
+		line-height: 42px;
 	}
 }
 

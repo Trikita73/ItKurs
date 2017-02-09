@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+	$.stellar({
+		responsive: true,
+		horizontalOffset: 60
+	});
+
+	$(".carousel").owlCarousel({
+		responsive : {
+			0 : {
+				items:1,
+				nav:true
+			}
+		}
+	});
+
 	function wResize() {
 		$("header").css("min-height", $(window).height());
 	};

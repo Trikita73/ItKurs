@@ -5,6 +5,10 @@
 	.tiz_descr{
 		display: block;
 	}
+	.tabs_header, .wrapper {
+		display: block;
+		position: fixed;
+	}
 }
 
 /* Medium Devices, Desktops */

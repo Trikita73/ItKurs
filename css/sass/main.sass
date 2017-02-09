@@ -51,6 +51,9 @@ h2
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
 	color: red
+	box-shadow: $red-color 0 0 0 2px 
+	border-color: $red-color
+
 body input:required:valid,
 body textarea:required:valid
 	color: green
@@ -113,7 +116,7 @@ header
 		font-size: 18px
 		background-color: rgba(225,225,225,.6)
 
-.tabs_header 
+.tabs_header
 	margin-top: 50px
 	ul, li 
 		list-style-type: none
@@ -245,10 +248,10 @@ form
 		font-size: 22px
 		color: $text-color
 		line-height: 22px
-		margin-bottom: 25px
+		margin-bottom: 30px
 	label
 		display: block
-		margin-bottom: 10px
+		margin-bottom: 15px
 		color: #666
 		font-size: 14px
 	input,
@@ -261,6 +264,7 @@ form
 		width: 100%
 		text-indent: 10px
 		font-size: 20px
+		margin-top: 3px
 		&:focus
 			box-shadow: $green-color 0 0 0 2px
 			border-radius: 3px 
@@ -268,3 +272,41 @@ form
 	.button_wrap
 		text-align: center
 		margin: 30px 0 10px
+
+.s_rewview
+	background-image: url(../img/middle_bg.jpg)
+	background-repeat: repeat-x 
+	background-attachment: fixed
+	min-height: 500px
+	background-position: top center 
+	background-size: cover
+
+.review_item 
+ 	color: #fff
+ 	text-align: center
+ 	h4
+ 		font-family: "Times New Roman", serif
+ 		font-style: italic
+ 		font-size: 22px 
+ 		font-weight: normal 
+ 		margin-top: 20px
+ 		margin-bottom: 20px
+ 	p
+ 		margin: 30px auto 0
+ 		display: inline-block	
+ 		float: none
+ 		font-size: 15px
+ 	.image_wrap
+ 		text-align: center
+ 		img
+ 			width: 165px
+ 			height: 165px
+ 			display:inline-block 
+ 			border-radius: 50%
+ 			border: #585A5B 10px solid
+
+.hr
+	width: 80px
+	height: 1px
+	background-color: #CEA380
+	margin: auto

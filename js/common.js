@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+	$('.popup').magnificPopup({type:"image"});
+
 	$.stellar({
 		responsive: true,
 		horizontalOffset: 60
@@ -8,10 +10,11 @@ $(document).ready(function() {
 	$(".carousel").owlCarousel({
 		responsive : {
 			0 : {
-				items:1,
-				nav:true
+				items : 1,
+				nav : true
 			}
-		}
+		},
+		navText : ""
 	});
 
 	function wResize() {

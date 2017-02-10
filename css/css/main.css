@@ -6,7 +6,8 @@ body {
   min-width: 320px;
   position: relative;
   line-height: 1.6;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+}
 
 h1 {
   color: #fff;
@@ -14,33 +15,44 @@ h1 {
   line-height: 56px;
   font-weight: bold;
   font-family: "CleanvertisingLight", sans-serif;
-  margin: 0; }
+  margin: 0;
+}
 
 section {
-  padding: 58px 0 68px; }
+  padding: 58px 0 68px;
+}
+
+section.s_dark h2, section h3, section p {
+  color: #fff;
+}
 
 section h2 {
   color: #9B1818;
   font-size: 50px;
   line-height: 56px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 h2 {
   color: #9B1818;
   font-size: 50px;
   line-height: 56px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-  color: red; }
+  color: red;
+}
 
 body input:required:valid,
 body textarea:required:valid {
-  color: green; }
+  color: green;
+}
 
 .hidden {
-  display: none; }
+  display: none;
+}
 
 header {
   min-height: 640px;
@@ -48,70 +60,130 @@ header {
   background-position: top center;
   background-size: cover;
   color: #fff;
-  padding-top: 32px; }
+  padding-top: 32px;
+  padding-bottom: 40px;
+}
 
 .logo {
   font-size: 40px;
   font-family: "RobotoBold", sans-serif;
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .top_phone {
-  text-align: right; }
+  text-align: right;
+}
 
 .top_phone .wrapper .tab {
   text-transform: uppercase;
-  cursor: pointer; }
+  cursor: pointer;
+}
 
 .top_phone .wrapper .active {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 .top_phone .tab_item {
   display: none;
-  font-size: 18px;
-  font-family: "RobotoBold", sans-serif; }
+  font-size: 34px;
+  font-family: "RobotoBold", sans-serif;
+}
+
+.top_header {
+  margin-top: 60px;
+}
+
+.top_header h2 {
+  margin: 10px 0 0;
+  font-family: "CleanvertisingLight", sans-serif;
+  font-size: 36px;
+}
 
 .top_phone .tab_item:first-child {
-  display: block; }
+  display: block;
+}
 
 .tabs span.active {
-  background-color: #fff; }
+  background-color: #fff;
+}
 
 .tabs .tab_content {
+  padding: 12px 18px 16px;
   font-size: 18px;
   background-color: rgba(225, 225, 225, 0.6);
-    background-color-padding: 12px 18px 16px; }
+}
 
 .tabs_header {
-  margin-top: 30px; }
-  .tabs_header ul, .tabs_header li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0; }
-  .tabs_header li {
-    padding-left: 40px;
-    position: relative;
-    margin-bottom: 12px; }
-  .tabs_header i {
-    position: absolute;
-    left: 0;
-    top: 0;
-    line-height: 26px;
-    color: #6F6A67; }
-  .tabs_header .tabs span {
-    display: inline-block;
-    backgrpound-color: rgba(225, 225, 225, 0.25);
-    padding: 15px 18px;
-    text-transform: uppercase;
-    cursor: pointer;
-    float: left;
-    font-family: "RobotoBold", sans-serif;
-    -webkit-transition: all 0.25s ease;
-    -moz-transition: all 0.25s ease;
-    transition: all 0.25s ease; }
-    .tabs_header .tabs span.active {
-      background-color: rgba(255, 255, 255, 0.6);
-      color: #fff; }
-  .tabs_header .tab_content {
-    font-size: 18px;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 12px 18px 16px; }
+  margin-top: 30px;
+}
+
+.tabs_header ul, .tabs_header li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tabs_header li {
+  padding-left: 40px;
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.tabs_header i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 26px;
+  color: #6F6A67;
+}
+
+.tabs_header .tabs span {
+  display: inline-block;
+  backgrpound-color: rgba(225, 225, 225, 0.25);
+  padding: 15px 18px;
+  text-transform: uppercase;
+  cursor: pointer;
+  float: left;
+  font-family: "RobotoBold", sans-serif;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.tabs_header .tabs span.active {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #fff;
+}
+
+.tabs_header .tab_content {
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 12px 18px 16px;
+  text-transform: uppercase;
+  font-family: "RobotoBold", sans-serif;
+  color: #000;
+}
+
+.button {
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 46px;
+  padding: 0 32px;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border-radous: 3px;
+  font-size: 16px;
+  font-family: "RobotoBold", sans-serif;
+}
+
+.button_wrap {
+  text-align: right;
+}
+
+a.button {
+  color: fff;
+  text-decoration: none;
+}

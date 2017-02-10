@@ -5,10 +5,6 @@
 	.tiz_descr{
 		display: block;
 	}
-	.tabs_header, .wrapper {
-		display: block;
-		position: fixed;
-	}
 }
 
 /* Medium Devices, Desktops */
@@ -80,12 +76,16 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-
+	.review_item p {
+		width: 85%;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.review_item p {
+		width: 85%;
+	}
 }
 
 /* Medium Devices, Desktops */

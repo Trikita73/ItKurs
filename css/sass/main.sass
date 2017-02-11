@@ -24,7 +24,8 @@ h1
 	font-family: "CleanvertisingLight", sans-serif
 	margin: 0
 
-section 
+section, 
+footer
 	padding: 58px 0 68px
 	&.s_dark h2, h3, p
 		color: #fff
@@ -77,6 +78,27 @@ header
 
 .top_phone
 	text-align: right	
+
+.bottom_phone
+	text-align: center
+	margin-top: 50px
+	color: $red-color
+
+.bottom_phone .wrapper .tab
+	text-transform: uppercase
+	cursor: pointer 
+	font-family: "RobotoBold", sans-serif
+
+.bottom_phone .wrapper .active 
+	text-decoration: underline
+
+.bottom_phone .tab_item 
+	display: none
+	font-size: 34px
+	font-family: "RobotoBold", sans-serif
+
+.bottom_phone .tab_item:first-child 
+	display: block
 
 .tab_item
 	display: none 
@@ -398,3 +420,18 @@ form
 	margin-top: 20px
 	min-height: 480px
 	background-color: #E1D680
+
+footer 
+	.button_wrap
+		text-align: center
+		margin-top: 30px	
+	h2
+		text-align: center
+		color: #000
+		margin-bottom: 50px
+	p
+		font-size: 18px
+		text-align: center
+		margin-top: 0
+		color: #000
+	

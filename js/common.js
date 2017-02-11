@@ -70,9 +70,18 @@ $(document).ready(function() {
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
-				$.fancybox.close();
 			}, 1000);
 		});
 	});
 	
+});
+
+$(window).load(function() {
+	$(".top_header h1").animated("fadeInDown", "fadeInDown");
+	$(".top_header h2").animated("fadeInUp", "fadeInUp");
+	$(".tabs_header .wrapper").animated("flipInY", "flipInY");
+	$(".profi_item").animated("fadeInRight", "fadeOutRight");
+	$(".s_profi form").animated("zoomInRight", "fadeOut");
+	$(".s_back h3").animated("fadeInUp", "fadeOut");
+	$("footer").animated("zoomIn", "fadeOut");
 });

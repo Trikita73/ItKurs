@@ -558,13 +558,15 @@ footer p {
   color: #000;
 }
 
-#hidden_form {
+#hidden_form,
+#form_back {
   max-width: 420px;
   margin: auto;
   position: relative;
 }
 
-#hidden_form h2 {
+#hidden_form h2,
+#form_back h2 {
   text-align: center;
   font-weight: normal;
 }

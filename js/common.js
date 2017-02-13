@@ -90,4 +90,8 @@ $(window).load(function() {
 	$(".s_profi form").animated("zoomInRight", "fadeOut");
 	$(".s_back h3").animated("fadeInUp", "fadeOut");
 	$("footer").animated("zoomIn", "fadeOut");
+	
+//JQuery: He is responsible for the slow scroll and loader-->
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
 });

@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 	$('.popup').magnificPopup({type:"image"});
+	$('.popup_c').magnificPopup();
 
 	$.stellar({
 		responsive: true,
@@ -61,7 +62,8 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("#form").submit(function(e) {
+	$("form").submit(function(e) {
+		var ths = $(this);
 		e.preventDefault;
 		$.ajax({
 			type: "POST",
@@ -70,8 +72,12 @@ $(document).ready(function() {
 		}).done(function() {
 			alert("Спасибо за заявку!");
 			setTimeout(function() {
+				var magnificPopup = $.magnificPopup.instance;
+				magnificPopup.close();	
+				ths.trigger("reset");
 			}, 1000);
 		});
+		return false;
 	});
 	
 });

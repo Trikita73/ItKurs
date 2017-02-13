@@ -76,7 +76,7 @@
 									<p>Содержимое 2</p>
 								</div>
 								<div class="button_wrap">
-									<a href="#" class="button btn_red">Начать обучение</a>
+									<a href="#hidden_form" class="button btn_red popup_c">Начать обучение</a>
 								</div>
 							</div>
 						</div>
@@ -249,7 +249,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<h3>Повышение знаний с ITKyrs - это оптимальное сочетание интенсива и углубленного подхода.</h3>
-					<a href="#" class="button btn_white">ОТправить заявку</a>
+					<a href="#hidden_form" class="button btn_white popup_c">Отправить заявку</a>
 				</div>
 			</div>
 		</div>
@@ -298,7 +298,7 @@
 							</div>
 						</div>
 						<div class="button_wrap">
-							<a href="#" class="button btn_red">Заказать звонок</a>
+							<a href="#form_back" class="button btn_red popup_c">Заказать звонок</a>
 						</div>
 					</div>
 				</div>
@@ -308,7 +308,39 @@
 
 	<div class="hidden">
 		<form id="hidden_form">
-			
+			<h2>Связаться с нами</h2>
+			<label>
+				<span>Ваше имя:</span>
+				<input type="text" name="name" required />
+			</label>
+			<label>
+				<span>Ваш телефон:</span>
+				<input type="text" name="phone" required />
+			</label>
+			<label>
+				<span>Ваш город:</span>
+				<select name="city">
+					<option>Киев</option>
+					<option>Днепр</option>
+				</select>
+			</label>
+			<div class="button_wrap">
+				<button class="button btn_green">ОТПРАВИТЬ ЗАЯВКУ</button>
+			</div>
+		</form>
+		<form id="form_back">
+			<h2>Заказать звонок</h2>
+			<label>
+				<span>Ваше имя:</span>
+				<input type="text" name="name" required />
+			</label>
+			<label>
+				<span>Ваш телефон:</span>
+				<input type="text" name="phone" required />
+			</label>
+			<div class="button_wrap">
+				<button class="button btn_green">ОТПРАВИТЬ ЗАЯВКУ</button>
+			</div>
 		</form>
 	</div>
 

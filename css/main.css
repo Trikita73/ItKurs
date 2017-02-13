@@ -248,7 +248,7 @@ header {
 }
 
 a.button {
-  color: fff;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -556,4 +556,15 @@ footer p {
   text-align: center;
   margin-top: 0;
   color: #000;
+}
+
+#hidden_form {
+  max-width: 420px;
+  margin: auto;
+  position: relative;
+}
+
+#hidden_form h2 {
+  text-align: center;
+  font-weight: normal;
 }

@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 	//Аякс отправка форм
 	//Документация: http://api.jquery.com/jquery.ajax/
-	$("form").submit(function(e) {
+	$("#hidden_form").submit(function(e) {
 		var ths = $(this);
 		e.preventDefault;
 		$.ajax({

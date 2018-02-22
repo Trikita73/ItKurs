@@ -1,7 +1,6 @@
 $(document).ready(function() {
 
-	$('.popup').magnificPopup({type:"image"});
-	$('.popup_c').magnificPopup();
+	$(".fancybox").fancybox();
 
 	$.stellar({
 		responsive: true,
